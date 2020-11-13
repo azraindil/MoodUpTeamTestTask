@@ -4,48 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imgPizza"
-        android:layout_gravity="center"
-        android:background="@drawable/circle_img">
-
-    </ImageView>
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.MoodUpTeamTestTask.AppBarOverlay">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/appbar"
-            app:popupTheme="@style/Theme.MoodUpTeamTestTask.PopupOverlay">
-        <TextView
-            android:id="@+id/appTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="22dp"
-            android:text="RecipeMaster"/>
-        </androidx.appcompat.widget.Toolbar>
-
-    </com.google.android.material.appbar.AppBarLayout>
+    tools:context=".MainActivity"
+    android:background="@color/white">
 
     <include layout="@layout/content_main" />
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:backgroundTint="@color/menubutton"
-        app:tint="@color/white"
-        app:srcCompat="@android:drawable/ic_input_add"/>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
