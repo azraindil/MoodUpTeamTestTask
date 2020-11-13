@@ -27,12 +27,12 @@ public class FirstFragment extends Fragment {
     ) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_first, container, false);
+
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-// Callback registration
-        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+       /* loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
                 // App code
@@ -54,6 +54,6 @@ public class FirstFragment extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         callbackManager.onActivityResult(requestCode, resultCode, data);
-        super.onActivityResult(requestCode, resultCode, data);
+        super.onActivityResult(requestCode, resultCode, data);*/
     }
 }
