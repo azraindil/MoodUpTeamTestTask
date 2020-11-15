@@ -113,5 +113,10 @@
             app:backgroundTint="@color/menubutton"
             app:srcCompat="@android:drawable/ic_input_add"
             app:tint="@color/white" />
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
