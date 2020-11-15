@@ -41,7 +41,7 @@ public class SaveImg {
 
                         try {
                             saveBitmap(context, bitmap, Bitmap.CompressFormat.JPEG, "image/jpeg", fileName);
-
+                            Toast.makeText(context, "Feedback about the successful save.", Toast.LENGTH_LONG).show();
                         } catch (IOException e) {
                             e.printStackTrace();
                             Toast.makeText(context, "IOError", Toast.LENGTH_LONG).show();

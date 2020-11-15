@@ -56,8 +56,8 @@ public class RecipeInfo extends AsyncTask<Void, Void, Void> {
 
                 preparing += i + 1 + ". " + preparingArray.getString(i) + "\n\n";
             }
-            fullData = json.getString("title") + ": \n\n" + json.getString("description") + "\n\nIngredients: \n\n"
-                    + ingredients + "\n\nPreparing: \n\n" + preparing + "\n\nImages: \n\n";
+            fullData = json.getString("title") + ": \n\n" + json.getString("description") + "\n\n\bIngredients: \n\n"
+                    + ingredients + "\n\n\bPreparing: \n\n" + preparing + "\n\n\bImages: \n\n";
 
             JSONArray imgArray = json.getJSONArray("imgs");
             img1 = imgArray.getString(0);

@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
@@ -44,6 +45,15 @@ public class SecondFragment extends Fragment {
         txtRecipe= view.findViewById(R.id.txtRecipe);
         RecipeInfo recipeInfo = new RecipeInfo();
         recipeInfo.execute();
+
+        Toolbar toolbar = view.findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
+        });
 
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
