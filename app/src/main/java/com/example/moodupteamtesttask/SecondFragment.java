@@ -56,7 +56,7 @@ public class SecondFragment extends Fragment {
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                               SaveImg saveImg = new SaveImg();
-                              saveImg.saveImgMethod(RecipeInfo.img1,SecondFragment.img1.getContext(),"pizza1", getContext());
+                              saveImg.saveImgMethod(RecipeInfo.img1,SecondFragment.img1.getContext(),"pizza1");
                             }
                         });
                 alertDialog1.setNegativeButton("NO",
@@ -79,7 +79,7 @@ public class SecondFragment extends Fragment {
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 SaveImg saveImg = new SaveImg();
-                                saveImg.saveImgMethod(RecipeInfo.img2,SecondFragment.img2.getContext(),"pizza2", getContext());
+                                saveImg.saveImgMethod(RecipeInfo.img2,SecondFragment.img2.getContext(),"pizza2");
                             }
                         });
                 alertDialog2.setNegativeButton("NO",
