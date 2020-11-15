@@ -10,6 +10,4 @@
     <string name="facebook_app_id">392542211798727</string>
     <string name="fb_login_protocol_scheme">fb392542211798727</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
